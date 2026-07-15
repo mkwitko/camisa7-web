@@ -1,0 +1,61 @@
+{
+  "card": {
+    "vagas": "{{confirmed}} de {{slots}} vagas confirmadas",
+    "waitlist_one": "{{count}} pessoa na fila de espera",
+    "waitlist_other": "{{count}} pessoas na fila de espera",
+    "status": {
+      "open": "Confirmações abertas",
+      "full": "Lotado",
+      "closed": "Confirmações encerradas",
+      "finished": "Pelada encerrada",
+      "cancelled": "Pelada cancelada"
+    },
+    "pix": {
+      "title": "Chave PIX para pagamento",
+      "copy": "Copiar chave PIX",
+      "copied": "Chave copiada!"
+    }
+  },
+  "form": {
+    "title": "Confirmar presença",
+    "fields": {
+      "name": "Seu nome",
+      "phone": "WhatsApp (opcional)"
+    },
+    "placeholders": {
+      "name": "Como você quer ser chamado",
+      "phone": "(11) 99999-9999"
+    },
+    "errors": {
+      "name": {
+        "required": "Digite seu nome para confirmar"
+      }
+    },
+    "submit": "Confirmar presença",
+    "submitting": "Confirmando…"
+  },
+  "result": {
+    "confirmed": {
+      "title": "Presença confirmada! ⚽",
+      "description": "Te esperamos na pelada. Combine o pagamento da sua parte com a chave PIX abaixo."
+    },
+    "waitlisted": {
+      "title": "Você entrou na fila (posição {{position}})",
+      "description": "A pelada está cheia, mas você não perde o lugar: se alguém desistir, chamamos você automaticamente."
+    }
+  },
+  "error": {
+    "invalidToken": {
+      "title": "Convite inválido ou expirado",
+      "description": "Esse link não existe mais ou já venceu. Peça um novo convite pra quem te chamou pra pelada."
+    },
+    "generic": {
+      "title": "Não deu pra carregar o convite",
+      "description": "Verifique sua internet e tente de novo."
+    },
+    "confirmFailed": "Não deu pra confirmar sua presença. Tente de novo."
+  },
+  "skeleton": {
+    "label": "Carregando convite…"
+  }
+}

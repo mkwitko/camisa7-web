@@ -1,0 +1,15 @@
+{
+  "brand": {
+    "name": "futebol"
+  },
+  "actions": {
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "retry": "Tentar novamente",
+    "back": "Voltar"
+  },
+  "states": {
+    "loading": "Carregando…",
+    "error": "Algo deu errado"
+  }
+}

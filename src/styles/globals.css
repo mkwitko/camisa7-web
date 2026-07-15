@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* "Estádio à Noite" — dark, premium, football-under-lights. */
+@theme {
+  --color-bg: #0b140f;
+  --color-surface: #13221a;
+  --color-surface-up: #1b2e23;
+  --color-primary: #21c776;
+  --color-primary-press: #17a05e;
+  --color-ink: #eef2ee;
+  --color-muted: #8a9a90;
+  --color-line: #24382c;
+  --color-danger: #ff5a47;
+  --color-tier-bronze: #cd7f32;
+  --color-tier-prata: #c7cdd1;
+  --color-tier-ouro: #f0b429;
+
+  --font-display: "Saira Condensed", system-ui, sans-serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
+
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-primary outline-2 outline-offset-2;
+  }
+}
