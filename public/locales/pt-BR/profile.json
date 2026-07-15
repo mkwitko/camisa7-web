@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "{{name}} · Futebol"
+  },
+  "level": {
+    "label": "Nível {{level}}",
+    "bronze": "Bronze",
+    "prata": "Prata",
+    "ouro": "Ouro"
+  },
+  "position": {
+    "goleiro": "GOL",
+    "zagueiro": "ZAG",
+    "lateral": "LAT",
+    "volante": "VOL",
+    "meia": "MEI",
+    "atacante": "ATA"
+  },
+  "stats": {
+    "matchesPlayed": "Partidas",
+    "wins": "Vitórias",
+    "winRate": "{{rate}} de aproveitamento",
+    "goals": "Gols",
+    "assists": "Assistências",
+    "cleanSheets": "Sem sofrer gol",
+    "mvpCount": "MVP",
+    "mvpCount_value": "{{count}}×",
+    "currentStreak": "Sequência invicta",
+    "currentStreak_value": "{{count}} jogos",
+    "bestStreak": "recorde de {{count}} jogos"
+  },
+  "overallByPosition": {
+    "title": "Overall por posição"
+  },
+  "share": {
+    "button": "Compartilhar",
+    "copy": "Copiar link",
+    "copied": "Link copiado!",
+    "text": "Confira o perfil de {{name}} no Futebol"
+  },
+  "cta": {
+    "text": "Monte sua pelada no app"
+  },
+  "error": {
+    "notFound": {
+      "title": "Jogador não encontrado",
+      "description": "Esse perfil não existe ou ainda não está público."
+    },
+    "generic": {
+      "title": "Não deu pra carregar o perfil",
+      "description": "Verifique sua internet e tente de novo."
+    }
+  },
+  "skeleton": {
+    "label": "Carregando perfil…"
+  }
+}

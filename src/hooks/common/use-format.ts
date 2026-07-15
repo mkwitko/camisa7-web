@@ -13,5 +13,6 @@ export function useFormat() {
     matchDateTime: (input: string | Date) => fmt.formatMatchDateTime(input, tz),
     time: (input: string | Date) => fmt.formatTime(input, tz),
     currency: (cents: number) => numFmt.formatCurrencyFromCents(cents),
+    percent: (value: number) => numFmt.formatPercent(value),
   };
 }

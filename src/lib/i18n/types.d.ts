@@ -2,6 +2,7 @@ import "i18next";
 import type common from "../../../public/locales/pt-BR/common.json";
 import type invite from "../../../public/locales/pt-BR/invite.json";
 import type landing from "../../../public/locales/pt-BR/landing.json";
+import type profile from "../../../public/locales/pt-BR/profile.json";
 import type zod from "../../../public/locales/pt-BR/zod.json";
 
 declare module "i18next" {
@@ -12,6 +13,7 @@ declare module "i18next" {
       zod: typeof zod;
       invite: typeof invite;
       landing: typeof landing;
+      profile: typeof profile;
     };
   }
 }

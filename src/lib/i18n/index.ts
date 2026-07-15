@@ -4,7 +4,7 @@ import HttpBackend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 
 export const DEFAULT_LANGUAGE = "pt-BR";
-export const NAMESPACES = ["common", "zod", "invite", "landing"] as const;
+export const NAMESPACES = ["common", "zod", "invite", "landing", "profile"] as const;
 
 export async function initI18n() {
   if (i18n.isInitialized) return i18n; // idempotent (StrictMode calls twice)

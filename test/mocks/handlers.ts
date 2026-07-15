@@ -1,3 +1,4 @@
+import type { GetPublicProfile200 } from "@/api/generated/types/GetPublicProfile";
 import type { PublicConfirmMutationResponse } from "@/api/generated/types/PublicConfirm";
 import type { ResolveInviteQueryResponse } from "@/api/generated/types/ResolveInvite";
 import { env } from "@/env";
@@ -24,6 +25,26 @@ export const mockConfirmedResult: PublicConfirmMutationResponse = {
   waitlistPos: null,
 };
 
+export const mockPublicProfile: GetPublicProfile200 = {
+  playerId: "44444444-4444-4444-8444-444444444444",
+  name: "Zico Nogueira",
+  level: "ouro",
+  overallByPosition: { atacante: 87, meia: 79 },
+  bestOverall: 87,
+  bestPosition: "atacante",
+  matchesPlayed: 274,
+  wins: 132,
+  draws: 91,
+  losses: 51,
+  winRate: 0.4818,
+  goals: 418,
+  assists: 96,
+  cleanSheets: 12,
+  mvpCount: 27,
+  currentStreak: 6,
+  bestStreak: 14,
+};
+
 export const handlers = [
   http.get(api("/invite/:token"), () => {
     return HttpResponse.json(mockInvite);
@@ -31,5 +52,9 @@ export const handlers = [
 
   http.post(api("/invite/confirm"), () => {
     return HttpResponse.json(mockConfirmedResult, { status: 201 });
+  }),
+
+  http.get(api("/players/:playerId/public-profile"), () => {
+    return HttpResponse.json(mockPublicProfile);
   }),
 ];
