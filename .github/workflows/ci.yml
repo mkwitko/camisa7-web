@@ -23,11 +23,13 @@ jobs:
           cache: pnpm
       - name: Install
         run: pnpm install --frozen-lockfile
+      - name: Generate typed OpenAPI client
+        run: pnpm gen:api
+      - name: Build and generate TanStack routes
+        run: pnpm build
       - name: Typecheck
         run: pnpm typecheck
       - name: Format & lint
         run: pnpm check
       - name: Unit tests
         run: pnpm test:run
-      - name: Build
-        run: pnpm build
