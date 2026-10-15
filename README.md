@@ -1,5 +1,7 @@
 # Camisa7 · Web
 
+[![Web quality gates](https://github.com/mkwitko/futebol-web/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mkwitko/futebol-web/actions/workflows/ci.yml)
+
 **React · TypeScript · TanStack Query**
 
 Web frontend in the Camisa7 football product family. This is one part of a multi-repository project. Other related components:
