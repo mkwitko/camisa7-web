@@ -13,6 +13,16 @@ Small web companion to the Camisa7 app: public invite pages where a guest can co
 - Public player profile `/player/$playerId` with stat tiles and a share button (`src/routes/player`, `src/components/profile`).
 - Loading, error and empty states for each page; i18n via i18next (`src/lib/i18n`).
 
+## Screenshots
+
+Captured with Playwright against the Vite dev server, with API responses served by route mocks and fictitious data (no real backend). The app is dark-only.
+
+<table>
+<tr><td width="50%"><img src="docs/screenshots/02-invite-open-desktop.png" alt="Public match invite with 9 of 14 confirmed and a guest form"><br><sub>Public invite with confirmation count and guest form (desktop).</sub></td><td width="50%"><img src="docs/screenshots/03-invite-confirmed-desktop.png" alt="Invite after a guest confirms presence, showing the PIX key card"><br><sub>Presence confirmed, with the organizer PIX key card (desktop).</sub></td></tr>
+<tr><td width="50%"><img src="docs/screenshots/05-player-profile-desktop.png" alt="Public player profile card with stat tiles"><br><sub>Public player profile with stat tiles and share link (desktop).</sub></td></tr>
+<tr><td width="50%"><img src="docs/screenshots/02-invite-open-mobile.png" alt="Public invite on a phone"><br><sub>Public invite (mobile).</sub></td><td width="50%"><img src="docs/screenshots/05-player-profile-mobile.png" alt="Player profile on a phone"><br><sub>Player profile (mobile).</sub></td></tr>
+</table>
+
 ## Architecture
 
 ```mermaid
